@@ -15,7 +15,6 @@ Browser7 provides geo-targeted web scraping with automatic proxy management, CAP
 - 🌍 **Geo-Targeting** - Render pages from specific countries and cities
 - 🤖 **CAPTCHA Solving** - Automatic detection and solving of reCAPTCHA and Cloudflare Turnstile
 - ⏱️ **Wait Actions** - Click elements, wait for selectors, text, or delays
-- 📸 **Screenshots** - Get JPEG screenshots of rendered pages
 - 🚀 **Performance** - Block images, track bandwidth, view timing metrics
 - 🔄 **Automatic Polling** - Built-in polling with progress callbacks
 - 💪 **Type Hints** - Full type declarations for IDE support
@@ -62,7 +61,6 @@ $result = $client->render('https://example.com', [
 ]);
 
 echo $result->html;              // Rendered HTML
-echo $result->screenshot;        // JPEG screenshot (binary)
 print_r($result->selectedCity);  // City used for rendering
 ```
 

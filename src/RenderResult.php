@@ -22,11 +22,6 @@ class RenderResult
     public ?string $html = null;
 
     /**
-     * @var string|null JPEG screenshot as binary data
-     */
-    public ?string $screenshot = null;
-
-    /**
      * @var array|null City information
      */
     public ?array $selectedCity = null;
@@ -60,7 +55,6 @@ class RenderResult
     {
         $this->status = $data['status'] ?? 'unknown';
         $this->html = $data['html'] ?? null;
-        $this->screenshot = $data['screenshot'] ?? null;
         $this->selectedCity = $data['selectedCity'] ?? null;
         $this->bandwidthMetrics = $data['bandwidthMetrics'] ?? null;
         $this->captcha = $data['captcha'] ?? null;
