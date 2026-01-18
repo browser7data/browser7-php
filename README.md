@@ -23,7 +23,7 @@ Browser7 provides geo-targeted web scraping with automatic proxy management, CAP
 ## Installation
 
 ```bash
-composer require browser7/browser7
+composer require browser7/sdk
 ```
 
 **Requirements:** PHP 8.0+
@@ -35,9 +35,9 @@ composer require browser7/browser7
 
 require 'vendor/autoload.php';
 
-use Browser7\Browser7;
+use Browser7\Browser7Client;
 
-$client = new Browser7('your-api-key');
+$client = new Browser7Client('your-api-key');
 
 // Simple render
 $result = $client->render('https://example.com');
@@ -49,7 +49,7 @@ echo $result->html;
 Get your API key from the [Browser7 Dashboard](https://dashboard.browser7.com).
 
 ```php
-$client = new Browser7('b7_your_api_key_here');
+$client = new Browser7Client('b7_your_api_key_here');
 ```
 
 ## Usage Examples
@@ -95,7 +95,7 @@ print_r($result->captcha);  // CAPTCHA detection info
 
 ## API Reference
 
-### `new Browser7(string $apiKey, ?string $baseUrl = null)`
+### `new Browser7Client(string $apiKey, ?string $baseUrl = null)`
 
 Create a new Browser7 client.
 
@@ -106,10 +106,10 @@ Create a new Browser7 client.
 **Example:**
 ```php
 // Production (default)
-$client = new Browser7('your-api-key');
+$client = new Browser7Client('your-api-key');
 
 // Canadian endpoint
-$client = new Browser7(
+$client = new Browser7Client(
     'your-api-key',
     'https://ca-api.browser7.com/v1'
 );

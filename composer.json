@@ -1,5 +1,5 @@
 {
-    "name": "browser7/browser7",
+    "name": "browser7/sdk",
     "description": "Official PHP SDK for Browser7 - Geo-targeted web scraping with automatic CAPTCHA solving and wait actions [ALPHA - API launching Q2 2026]",
     "type": "library",
     "keywords": [

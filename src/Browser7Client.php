@@ -16,7 +16,7 @@ use RuntimeException;
  * @version 0.1.0-alpha1
  * @link https://browser7.com
  */
-class Browser7
+class Browser7Client
 {
     /**
      * @var string Browser7 API key
