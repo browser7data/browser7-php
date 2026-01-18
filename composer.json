@@ -1,0 +1,53 @@
+{
+    "name": "browser7/browser7",
+    "description": "Official PHP SDK for Browser7 - Geo-targeted web scraping with automatic CAPTCHA solving and wait actions [ALPHA - API launching Q2 2026]",
+    "type": "library",
+    "keywords": [
+        "browser7",
+        "web-scraping",
+        "scraping",
+        "rendering",
+        "headless-browser",
+        "captcha",
+        "captcha-solver",
+        "geo-targeting",
+        "proxy",
+        "api-client",
+        "screenshot",
+        "automation"
+    ],
+    "homepage": "https://browser7.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Browser7",
+            "email": "support@browser7.com",
+            "homepage": "https://browser7.com"
+        }
+    ],
+    "support": {
+        "email": "support@browser7.com",
+        "issues": "https://github.com/browser7data/browser7-php/issues",
+        "source": "https://github.com/browser7data/browser7-php",
+        "docs": "https://docs.browser7.com"
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Browser7\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Browser7\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "version": "0.1.0-alpha1"
+}
